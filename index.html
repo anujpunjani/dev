@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Terminal Styled Website" />
+    <meta name="author" content="Anuj Punjani" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="icon" href="./assets/terminal.svg">
+    <title>punjani | Terminal</title>
+</head>
+
+<body>
+    <div class="console">
+        <main id="id" class="padding-50 height-100">
+            <div id="terminal">
+                <a id="terminalLines"></a>
+            </div>
+
+            <p id="passwordBox" class="hidden">[sudo] password: <input type='text' spellcheck='false' autocomplete='off'
+                    id='password' onkeypress='secret(event)'></input><br><br></p>
+
+            <div id="userCommandBox">
+                <p><span class="stark"><span class="leafgreen">guest</span>@<span class="jewel">anujpunjani.dev</span>:$
+                        ~
+                    </span>
+
+                    <input spellcheck="false" autocomplete="off" id="userCommand" onkeydown="historyScroll(event)"
+                        onkeypress="enterCommand(event)"></input>
+                </p>
+            </div>
+        </main>
+    </div>
+    <script src="./js/variables.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
