@@ -1,4 +1,4 @@
-const sourceLink = "https://github.com/anujpunjani/terminal";
+const sourceLink = "https://github.com/anujpunjani/dev";
 const github = "https://github.com/anujpunjani";
 const linkedin = "https://www.linkedin.com/in/anujpunjani/";
 const email = "appunjani@gmail.com";
